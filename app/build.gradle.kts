@@ -90,26 +90,6 @@ dependencies {
     ksp(libs.hilt.android.compiler)
     // hilt-navigation integration
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
-    // room
-    val room_version = "2.6.1"
-    implementation("androidx.room:room-runtime:$room_version")
-    ksp("androidx.room:room-compiler:$room_version")
-    // optional - Kotlin Extensions and Coroutines support for Room
-    implementation("androidx.room:room-ktx:$room_version")
-    // retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    // gson converter
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
-    // gson itself
-    implementation("com.google.code.gson:gson:2.11.0")
-    // coroutines
-    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
-    // integration of hilt with navigation
-    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
-    // firebase base
-    implementation(platform("com.google.firebase:firebase-bom:33.10.0"))
-    // datastore
-    implementation("androidx.datastore:datastore-preferences:1.1.3")
 
 }
 
